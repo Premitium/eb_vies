@@ -3,13 +3,15 @@ name = "eb_vies"
 version = "0.0.1"
 description = "EU VAT number validation via VIES"
 authors = [
-    { name = "Simo", email = "simo@sofiaelectricbrewing.com"}
+    { name = "Simo", email = "simo@sofiaelectricbrewing.com" }
 ]
+requires-python = ">=3.10"
+readme = "README.md"
 dependencies = [
     "zeep"
 ]
 
-description = "App to validate VIES numbers"
+
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
