@@ -5,6 +5,24 @@ app_description = "App to validate VIES numbers"
 app_email = "simo@sofiaelectricbrewing.com"
 app_license = "gpl-3.0"
 
+
+app_icon = "octicon octicon-globe"
+app_color = "blue"
+
+# Optional:
+app_version = "0.0.1"
+
+# Link the desktop module
+app_module_map = {
+    "eb_vies": "eb_vies"
+}
+
+doc_events = {
+    "Customer": {
+        "validate": "eb_vies.vat_validator.validate_vat_number"
+    }
+}
+
 # Apps
 # ------------------
 
