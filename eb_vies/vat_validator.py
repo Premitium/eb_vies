@@ -9,7 +9,7 @@ def validate_vat_number(doc, method):
         return  # skip empty or invalid input
 
     country_code = vat_number[:2].upper()
-    number = vat_number[2:]
+    number = vat_number[2:].replace("-", "").replace(" ", "").strip()
 
     try:
         session = Session()
